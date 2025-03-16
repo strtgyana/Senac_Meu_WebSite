@@ -1,48 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Quicksand:wght@300..700&display=swap');
 
+/*fui no site google fontes e copiei o link da fonte que eu queria usar*/
 * {
     box-sizing: border-box;
+    /*larguras e alturas*/
 }
 
 body {
     padding: 0;
+    /*preenchimento*/
     margin: 0;
     font-family: "Quicksand", sans-serif;
 }
 
 header {
+    /*MUNDO SANRIO*/
     background-color: #e83e8c;
     height: 80px;
+    /*tamanho*/
     font-size: 60px;
     color: white;
     display: flex;
+    /*como o item se comporta na tela, preenchendo*/
     justify-content: center;
+    /*tipo text align*/
     align-items: center;
+    /*centraliza na horizontal*/
     font-family: "Playwrite HU", cursive;
-    text-align: center;
+    /*puxando a fonte pra header*/
 }
 
-/* Ajustes gerais */
-.topo, .conteudo, .conteudo2 {
+.topo {
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 20px;
 }
 
 .imagem {
     width: 35%;
+    /*largura*/
+
 }
 
 .texto1 {
-    width: 50%;
-    text-align: center;
+    /*bloco do topo*/
+    display: flex;
+    width: 35%;
+    flex-flow: row wrap;
+    /*deixa cada elemento em linhas*/
 }
 
 .texto1 h1 {
+    /*venha conhecer*/
     color: rgb(104, 104, 104);
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -50,40 +61,64 @@ header {
 }
 
 .texto1 h2 {
-    font-size: 60px;
+    /*um mundo encantador*/
+    font-size: 80px;
     color: #e83e8c;
     font-weight: 800;
+    /*grossura da letra*/
     margin-top: 10px;
     margin-bottom: 30px;
-    line-height: 60px;
+    line-height: 70px;
+    /*distanciamento entre as palavras*/
+
 }
 
 .texto1 p {
     color: rgb(104, 104, 104);
     font-weight: bold;
-    font-size: larger;
+    /*negrito*/
+    font-size: larger
 }
 
 .btntopo {
+    /*botao personagens*/
     background-color: #e83e8c;
     padding: 15px 25px;
     text-decoration: none;
+    /*tira a linha debaixo do link*/
     color: white;
     border-radius: 5px;
+    /*arredonda os cantos da borda*/
     transition: 0.5s all;
+    /*mudanca do efeito do botao*/
     margin-top: 30px;
+    margin-bottom: 30px;
     font-weight: bold;
+    /*negrito*/
 }
 
 .btntopo:hover {
+    /*O QUE EU QUERO QUE O MOUSE FACA*/
     background-color: #ac175c;
 }
 
-/* Estilização dos cards */
-.caixa, .caixa2 {
+.conteudo {
+    /*parte debaixo*/
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    font-size: medium;
+    flex-flow: row wrap;
+    /*colocou o botao pra baixo*/
+}
+
+.caixa {
+    width: 30%;
     background-color: #fcc1dd;
-    height: auto;
-    margin: 10px;
+    height: 350px;
+    margin: 5px;
     padding: 30px 20px;
     text-align: center;
     border-radius: 10px;
@@ -92,137 +127,116 @@ header {
     font-weight: bold;
 }
 
-/* Ajuste para conteúdo centralizado */
-.container {
+footer {
+    background-color: #e83e8c;
+    height: 150px;
+    margin-top: 100px;
+    color: white;
+    font-size: 22px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.titulo {
+    /*literalmente so o titulo personagens*/
+    color: rgb(104, 104, 104);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.conteudo2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    flex-flow: row wrap;
+    margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    /* alinha verticalmente */
     gap: 20px;
-    width: 80%;
+    /* espaço entre imagem e texto */
+    width: 70%;
     margin: auto;
+    /*alinha no meio*/
     border: 5px solid #e83e8c;
     padding: 40px;
     border-radius: 10px;
-    text-align: center;
+    margin-top: 40px
 }
 
 .container img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
+    /* Ajusta a imagem sem distorcer */
 }
 
 .texto3 h2 {
-    font-size: 50px;
+    /*um mundo encantador*/
+    font-size: 80px;
     color: #e83e8c;
     font-weight: 800;
+    /*grossura da letra*/
     margin-top: 10px;
     margin-bottom: 30px;
-    line-height: 50px;
+    line-height: 70px;
+    /*distanciamento entre as palavras*/
 }
 
 .texto3 p {
     color: rgb(104, 104, 104);
     font-weight: bold;
-    font-size: larger;
+    /*negrito*/
+    font-size: larger
 }
 
-footer {
-    background-color: #e83e8c;
-    height: 100px;
-    color: white;
-    font-size: 18px;
+.topo2 {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
+}
+
+.imagem1 {
+    margin-top: 50px;
+    width: 30%;
+    /*largura*/
+}
+.conteudo2 {
+    /*parte debaixo*/
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    font-size: medium;
+}
+.caixa2 {
+    width: 25%;
+    background-color: #fcc1dd;
+    height: 250px;
+    margin: 5px;
+    padding: 40px 30px;
     text-align: center;
+    border-radius: 10px;
+    font-size: larger;
+    color: rgb(83, 83, 83);
+    font-weight: bold;
+    margin-top: 30px;
 }
-
-/* Responsividade */
-@media (max-width: 1024px) {
-    .imagem {
-        width: 50%;
-    }
-
-    .texto1 {
-        width: 80%;
-    }
-
-    .texto1 h2 {
-        font-size: 50px;
-        line-height: 50px;
-    }
-
-    .container {
-        width: 90%;
-        padding: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        font-size: 40px;
-    }
-
-    .imagem, .imagem1 {
-        width: 80%;
-    }
-
-    .texto1, .texto3 {
-        width: 100%;
-    }
-
-    .texto1 h2, .texto3 h2 {
-        font-size: 40px;
-        line-height: 40px;
-    }
-
-    .conteudo, .conteudo2 {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .caixa, .caixa2 {
-        width: 80%;
-        font-size: medium;
-    }
-
-    .container {
-        width: 100%;
-        padding: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        font-size: 30px;
-        height: 60px;
-    }
-
-    .texto1 h2, .texto3 h2 {
-        font-size: 30px;
-        line-height: 35px;
-    }
-
-    .imagem, .imagem1 {
-        width: 100%;
-    }
-
-    .caixa, .caixa2 {
-        width: 90%;
-    }
-
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    footer {
-        font-size: 16px;
-        height: 80px;
-    }
+.caixa2 h1{
+    color: #e83e8c;
+    letter-spacing: 2px;
+    text-transform: normal;
+    margin-top: 10px;
+    font-size: x-large;
 }
