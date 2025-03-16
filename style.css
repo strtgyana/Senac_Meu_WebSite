@@ -11,6 +11,7 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
+/* Header */
 header {
     background-color: #e83e8c;
     height: 80px;
@@ -23,8 +24,10 @@ header {
     text-align: center;
 }
 
+/* Ajuste de layout flexível */
 .topo, .conteudo, .conteudo2 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -33,6 +36,7 @@ header {
 
 .imagem {
     width: 35%;
+    max-width: 400px;
 }
 
 .texto1 {
@@ -41,4 +45,153 @@ header {
 }
 
 .texto1 h1 {
-    color: rgb(104, 104,
+    color: rgb(104, 104, 104);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.texto1 h2 {
+    font-size: 60px;
+    color: #e83e8c;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 60px;
+}
+
+.texto1 p {
+    color: rgb(104, 104, 104);
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* Botão */
+.btntopo {
+    background-color: #e83e8c;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s all;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.btntopo:hover {
+    background-color: #ac175c;
+}
+
+/* Estilização dos cards */
+.caixa, .caixa2 {
+    background-color: #fcc1dd;
+    height: auto;
+    margin: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: larger;
+    color: rgb(83, 83, 83);
+    font-weight: bold;
+}
+
+/* Ajuste para conteúdo centralizado */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    border: 5px solid #e83e8c;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    .topo, .conteudo, .conteudo2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagem {
+        width: 80%;
+    }
+
+    .texto1, .texto3 {
+        width: 90%;
+    }
+
+    .texto1 h2, .texto3 h2 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 40px;
+        height: 60px;
+    }
+
+    .imagem, .imagem1 {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .texto1 h2, .texto3 h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .caixa, .caixa2 {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .btntopo {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 30px;
+        height: 50px;
+    }
+
+    .texto1 h2, .texto3 h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .imagem, .imagem1 {
+        width: 100%;
+    }
+
+    .btntopo {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
