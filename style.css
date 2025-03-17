@@ -194,7 +194,7 @@ footer {
 /* Estilos para a imagem 1 */
 .imagem1 {
     margin-top: 50px; /* Margem superior */
-    width: 35%; /* Largura */
+    width: 37%; /* Largura */
 }
 
 /* Estilos para a segunda seção de conteúdo */
@@ -236,79 +236,3 @@ footer {
     color: #e83e8c; /* Cor do texto */
 }
 
-/* Media query for tablets */
-@media (max-width: 768px) {
-    .imagem1, .imagem {
-        width: 50%;
-    }
-
-    .conteudo, .conteudo2 {
-        flex-direction: column;
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .caixa, .caixa2 {
-        width: 80%;
-        margin: 10px auto;
-    }
-
-    .container {
-        width: 90%;
-        padding: 20px;
-    }
-
-    .texto1 h2, .texto3 h2 {
-        font-size: 60px;
-    }
-
-    .texto1 p, .texto3 p {
-        font-size: medium;
-    }
-}
-
-/* Media query for mobile phones */
-@media (max-width: 480px) {
-    header {
-        font-size: 40px;
-        height: 60px;
-    }
-
-    .imagem1, .imagem {
-        width: 70%;
-    }
-
-    .texto1 h1, .titulo {
-        font-size: large;
-        margin-top: 20px;
-    }
-
-    .texto1 h2, .texto3 h2 {
-        font-size: 40px;
-    }
-
-    .texto1 p, .texto3 p {
-        font-size: small;
-    }
-
-    .btntopo {
-        padding: 10px 20px;
-        font-size: small;
-    }
-
-    .caixa, .caixa2 {
-        width: 90%;
-        height: auto;
-        padding: 20px;
-    }
-
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    footer {
-        font-size: 18px;
-        height: 100px;
-    }
-}
