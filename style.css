@@ -2,237 +2,214 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Quicksand:wght@300..700&display=swap');
 
-/* Aplica box-sizing para incluir padding e border nas dimensões totais dos elementos */
+/* aplica box-sizing para incluir padding e border nas dimensões totais dos elementos */
 * {
     box-sizing: border-box; /* larguras e alturas */
 }
 
-/* Define estilos básicos para o corpo da página */
 body {
     padding: 0; /* preenchimento */
     margin: 0;
-    font-family: "Quicksand", sans-serif; /* Define a fonte padrão */
+    font-family: "Quicksand", sans-serif; /* define a fonte padrão */
 }
 
-/* Estilos para o cabeçalho */
 header {
-    background-color: #e83e8c; /* Cor de fundo */
-    height: 80px; /* Altura */
-    font-size: 60px; /* Tamanho da fonte */
-    color: white; /* Cor do texto */
-    display: flex; /* Usa flexbox para layout */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    font-family: "Playwrite HU", cursive; /* Fonte específica para o cabeçalho */
+    background-color: #e83e8c; /* cor de fundo */
+    height: 80px; /* altura */
+    font-size: 60px; /* tamanho da fonte */
+    color: white; /* cor do texto */
+    display: flex; /* usa flexbox para layout */
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+    font-family: "Playwrite HU", cursive; /* fonte específica para o cabeçalho */
 }
 
-/* Estilos para a seção de topo */
 .topo {
-    display: flex; /* Usa flexbox para layout */
-    width: 100%; /* Largura total */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    display: flex; 
+    width: 100%; 
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
 }
 
-/* Estilos para a imagem */
 .imagem {
-    width: 37%; /* Define a largura da imagem */
+    width: 37%; 
 }
 
-/* Estilos para o bloco de texto no topo */
 .texto1 {
-    display: flex; /* Usa flexbox para layout */
-    width: 35%; /* Largura do bloco */
-    flex-flow: row wrap; /* Permite que os elementos se organizem em linhas */
+    display: flex; 
+    width: 35%; /* largura do bloco */
+    flex-flow: row wrap; /* permite que os elementos se organizem em linhas */
 }
 
-/* Estilos para o título h1 no bloco de texto */
 .texto1 h1 {
-    color: rgb(104, 104, 104); /* Cor do texto */
-    letter-spacing: 5px; /* Espaçamento entre letras */
-    text-transform: uppercase; /* Transforma o texto em maiúsculas */
-    margin-top: 50px; /* Margem superior */
+    color: rgb(104, 104, 104); 
+    letter-spacing: 5px; /* espaçamento entre letras */
+    text-transform: uppercase; /* transforma o texto em maiúsculas */
+    margin-top: 50px; 
 }
 
-/* Estilos para o título h2 no bloco de texto */
 .texto1 h2 {
-    font-size: 80px; /* Tamanho da fonte */
-    color: #e83e8c; /* Cor do texto */
-    font-weight: 800; /* Espessura da fonte */
-    margin-top: 10px; /* Margem superior */
-    margin-bottom: 30px; /* Margem inferior */
-    line-height: 70px; /* Altura da linha */
+    font-size: 80px; 
+    color: #e83e8c; 
+    font-weight: 800; /* espessura da fonte */
+    margin-top: 10px; 
+    margin-bottom: 30px; 
+    line-height: 70px; 
 }
 
-/* Estilos para o parágrafo no bloco de texto */
 .texto1 p {
-    color: rgb(104, 104, 104); /* Cor do texto */
-    font-weight: bold; /* Negrito */
-    font-size: larger; /* Tamanho da fonte */
+    color: rgb(104, 104, 104); 
+    font-weight: bold; /* negrito */
+    font-size: larger; 
 }
 
-/* Estilos para o botão no topo */
 .btntopo {
-    background-color: #e83e8c; /* Cor de fundo */
-    padding: 15px 25px; /* Preenchimento */
-    text-decoration: none; /* Remove a linha debaixo do link */
-    color: white; /* Cor do texto */
-    border-radius: 5px; /* Arredonda os cantos da borda */
-    transition: 0.5s all; /* Transição para todas as propriedades */
-    margin-top: 30px; /* Margem superior */
-    margin-bottom: 30px; /* Margem inferior */
-    font-weight: bold; /* Negrito */
+    background-color: #e83e8c;
+    padding: 15px 25px; 
+    text-decoration: none; /* remove a linha debaixo do link */
+    color: white; 
+    border-radius: 5px; /* arredonda os cantos da borda */
+    transition: 0.5s all; /* transição para todas as propriedades */
+    margin-top: 30px; 
+    margin-bottom: 30px; 
+    font-weight: bold; /* negrito */
 }
 
-/* Estilos para o botão quando o mouse passa por cima */
+
 .btntopo:hover {
-    background-color: #ac175c; /* Cor de fundo ao passar o mouse */
+    background-color: #ac175c; /*cor de fundo ao passar o mouse */
 }
 
-/* Estilos para a seção de conteúdo */
 .conteudo {
-    display: flex; /* Usa flexbox para layout */
-    width: 80%; /* Largura */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    margin-left: 10%; /* Margem à esquerda */
-    font-size: medium; /* Tamanho da fonte */
-    flex-flow: row wrap; /* Organiza os elementos em linhas */
+    display: flex; 
+    width: 80%; 
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+    margin-left: 10%; 
+    flex-flow: row wrap; /* organiza os elementos em linhas */
 }
 
-/* Estilos para as caixas de conteúdo */
 .caixa {
-    width: 30%; /* Largura */
-    background-color: #fcc1dd; /* Cor de fundo */
-    height: 380px; /* Altura */
-    margin: 5px; /* Margem */
-    padding: 30px 20px; /* Preenchimento */
-    text-align: center; /* Alinhamento do texto */
-    border-radius: 10px; /* Arredonda os cantos */
-    font-size: larger; /* Tamanho da fonte */
-    color: rgb(83, 83, 83); /* Cor do texto */
-    font-weight: bold; /* Negrito */
+    width: 30%;
+    background-color: #fcc1dd; 
+    height: 380px; 
+    margin: 5px; 
+    padding: 30px 20px; 
+    text-align: center; 
+    border-radius: 10px;
+    font-size: larger;
+    color: rgb(83, 83, 83); 
+    font-weight: bold; /* negrito */
 }
 
-/* Estilos para o rodapé */
 footer {
-    background-color: #e83e8c; /* Cor de fundo */
-    height: 150px; /* Altura */
-    margin-top: 100px; /* Margem superior */
-    color: white; /* Cor do texto */
-    font-size: 22px; /* Tamanho da fonte */
-    display: flex; /* Usa flexbox para layout */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    background-color: #e83e8c; 
+    height: 150px; 
+    margin-top: 100px; 
+    color: white; /*cor do texto */
+    font-size: 22px; 
+    display: flex; 
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
 }
 
-/* Estilos para o título */
 .titulo {
-    color: rgb(104, 104, 104); /* Cor do texto */
-    letter-spacing: 5px; /* Espaçamento entre letras */
-    text-transform: uppercase; /* Transforma o texto em maiúsculas */
-    margin-top: 50px; /* Margem superior */
-    text-align: center; /* Alinhamento do texto */
-    font-size: x-large; /* Tamanho da fonte */
+    color: rgb(104, 104, 104); 
+    letter-spacing: 5px; 
+    text-transform: uppercase; 
+    margin-top: 50px; 
+    text-align: center; 
+    font-size: x-large; 
 }
 
-/* Estilos para a segunda seção de conteúdo */
 .conteudo2 {
-    display: flex; /* Usa flexbox para layout */
-    width: 100%; /* Largura */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    font-size: medium; /* Tamanho da fonte */
-    flex-flow: row wrap; /* Organiza os elementos em linhas */
-    margin-top: 30px; /* Margem superior */
+    display: flex; 
+    width: 100%; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: medium; 
+    flex-flow: row wrap; 
+    margin-top: 30px; 
 }
 
-/* Estilos para o container */
+
 .container {
-    display: flex; /* Usa flexbox para layout */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 20px; /* Espaço entre imagem e texto */
-    width: 70%; /* Largura */
-    margin: auto; /* Centraliza horizontalmente */
-    border: 5px solid #e83e8c; /* Borda */
-    padding: 40px; /* Preenchimento */
-    border-radius: 10px; /* Arredonda os cantos */
-    margin-top: 40px; /* Margem superior */
+    display: flex; 
+    align-items: center; 
+    gap: 20px; /* espaço entre imagem e texto */
+    width: 70%; 
+    margin: auto; /*centraliza horizontalmente */
+    border: 5px solid #e83e8c; 
+    padding: 40px; 
+    border-radius: 10px; 
+    margin-top: 40px; 
 }
 
-/* Estilos para a imagem dentro do container */
 .container img {
-    width: 300px; /* Largura */
-    height: 300px; /* Altura */
+    width: 300px; 
+    height: 300px;
 }
 
-/* Estilos para o título h2 na seção de texto 3 */
 .texto3 h2 {
-    font-size: 80px; /* Tamanho da fonte */
-    color: #e83e8c; /* Cor do texto */
-    font-weight: 800; /* Espessura da fonte */
-    margin-top: 10px; /* Margem superior */
-    margin-bottom: 30px; /* Margem inferior */
-    line-height: 70px; /* Altura da linha */
+    font-size: 80px; 
+    color: #e83e8c;
+    font-weight: 800; 
+    margin-top: 10px; 
+    margin-bottom: 30px;
+    line-height: 70px; 
 }
 
-/* Estilos para o parágrafo na seção de texto 3 */
 .texto3 p {
-    color: rgb(104, 104, 104); /* Cor do texto */
-    font-weight: bold; /* Negrito */
-    font-size: larger; /* Tamanho da fonte */
+    color: rgb(104, 104, 104); 
+    font-weight: bold; 
+    font-size: larger;
 }
 
-/* Estilos para a segunda seção de topo */
 .topo2 {
-    display: flex; /* Usa flexbox para layout */
-    width: 100%; /* Largura */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    display: flex;
+    width: 100%; 
+    justify-content: center; 
+    align-items: center;
 }
 
-/* Estilos para a imagem 1 */
 .imagem1 {
-    margin-top: 50px; /* Margem superior */
-    width: 37%; /* Largura */
+    margin-top: 50px; 
+    width: 37%; 
 }
 
-/* Estilos para a segunda seção de conteúdo */
 .conteudo2 {
-    display: flex; /* Usa flexbox para layout */
-    width: 80%; /* Largura */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    margin-left: 10%; /* Margem à esquerda */
-    font-size: medium; /* Tamanho da fonte */
+    display: flex;
+    width: 80%; 
+    justify-content: center;
+    align-items: center; 
+    margin-left: 10%; 
 }
 
-/* Estilos para a segunda caixa de conteúdo */
+
 .caixa2 {
-    width: 30%; /* Largura */
-    background-color: #fcc1dd; /* Cor de fundo */
-    height: 300px; /* Altura */
-    margin: 5px; /* Margem */
-    padding: 50px 40px; /* Preenchimento */
-    text-align: center; /* Alinhamento do texto */
-    border-radius: 10px; /* Arredonda os cantos */
-    font-size: larger; /* Tamanho da fonte */
-    color: rgb(83, 83, 83); /* Cor do texto */
-    font-weight: bold; /* Negrito */
-    margin-top: 30px; /* Margem superior */
+    width: 30%; 
+    background-color: #fcc1dd; 
+    height: 300px; 
+    margin: 5px; 
+    padding: 50px 40px; 
+    text-align: center; 
+    border-radius: 10px;
+    font-size: larger; 
+    color: rgb(83, 83, 83); 
+    font-weight: bold; 
+    margin-top: 30px; 
 }
 
-/* Estilos para o título h1 na segunda caixa de conteúdo */
+
 .caixa2 h1 {
-    color: #e83e8c; /* Cor do texto */
-    letter-spacing: 2px; /* Espaçamento entre letras */
-    text-transform: normal; /* Transformação do texto */
-    margin-top: 5px; /* Margem superior */
-    font-size: x-large; /* Tamanho da fonte */
+    color: #e83e8c; 
+    letter-spacing: 2px; 
+    text-transform: normal; 
+    margin-top: 5px; 
+    font-size: x-large; 
 }
 
-/* Estilos para o texto destacado */
 .destacado {
-    color: #e83e8c; /* Cor do texto */
+    color: #e83e8c; 
 }
 
