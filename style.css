@@ -213,15 +213,5 @@ footer {
     color: #e83e8c; 
 }
 
-.navegacao {
-    font-weight: bold; /* negrito */
-    text-align: center;
-    font-size: medium;
-    height: 30px;
-    align-items: center;
-    padding: 5px 10px;
-    margin-top: 10px;
-    text-decoration: none; /* remove a decoração do texto */
-    color:#e83e8c; /* define a cor do texto como branca */
-}
+
 
